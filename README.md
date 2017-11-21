@@ -1,5 +1,5 @@
 # zipstore
-Create a hassle-free small-scale file-server.
+Create a hassle-free small-scale http multipart file-server. Makes use of each cpu on the device (**cluster-mode**).
 
 ## Installation
 Currently, only Linux Distributions are supported, which support **systemd** (*tested in ubuntu 16.04*):
@@ -44,3 +44,9 @@ This service is sensitive to the following env-variables:
 - `NODE_ENV`: specify the deploy-setting (*will only impact logging output look*)
 - `PORT`: specify the port to listen for incomming requests; `8000` is the default port, `8080` is the default service port.
 - `HOSTNAME`: specify the interface to listen to (*127.0.0.1*, *localhost*, *0.0.0.0*, *host-ip*); `localhost` is the default hostname (for the service as well: **use nginx to allow external access to this service to enhance security**).
+
+## Future
+- [ ] support upstream blob-providers: **Microsoft Azure File Service**, **Amazon AWS S3 File Storage** to **backup / sync high-scale application files**.
+- [ ] support **file compression** to **reduce IO usage**.
+- [ ] create **cli-tool** to **get insights and configure the service**.
+- [ ] create cluster-mode with multiple servers (**sharding**).
