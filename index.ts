@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 import * as body from "body-parser";
 import * as cluster from "cluster";
 import * as express from "express";
