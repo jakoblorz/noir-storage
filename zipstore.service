@@ -14,7 +14,7 @@ StandardError=syslog
 SyslogIdentifier=zipstore
 #User=<alternate user>
 #Group=<alternate group>
-Environment=NODE_ENV=production FILEROOT=/var/lib/zipstore/.data
+Environment=NODE_ENV=production FILEROOT=/var/lib/zipstore/.data PORT=8080 HOSTNAME=localhost
 
 [Install]
 WantedBy=multi-user.target
